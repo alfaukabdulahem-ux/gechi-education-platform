@@ -1,0 +1,96 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    scroll-behavior: smooth;
+    background: #f3f3f3;
+}
+
+.background-section {
+    position: relative;
+    height: 75vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 20px;
+    background: linear-gradient(to bottom, #ffecd2, #fcb69f);
+    overflow: hidden;
+}
+
+.mosque-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 50%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.header-text {
+    width: 50%;
+    text-align: right;
+    margin-left: auto;
+}
+
+.header-text h1 { font-size: 2em; margin: 0; }
+.header-text h2 { font-size: 1.2em; margin-top: 10px; }
+
+#menu-toggle {
+    position: fixed;
+    left: 10px;
+    top: 50%;
+    background-color: #fca311;
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 20;
+    user-select: none;
+}
+
+#menu-toggle:hover { background-color: #e07b00; }
+
+.options-section {
+    display: none;
+    position: fixed;
+    left: 60px;
+    top: 50%;
+    transform: translateY(-50%);
+    flex-direction: column;
+    gap: 15px;
+    z-index: 15;
+}
+
+.option-button {
+    padding: 10px 20px;
+    background-color: #fca311;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.option-button:hover { background-color: #e07b00; }
+
+.display-section { display:flex; flex-direction: column; align-items:center; margin:20px; min-height:400px; }
+#display-text { width:80%; min-height:50px; padding:15px; background-color:#ffffffcc; border-radius:8px; margin-bottom:10px; white-space: pre-wrap; }
+
+#secure-input-container input {
+    width:80%;
+    padding:10px;
+    border-radius:5px;
+    border:1px solid #ccc;
+    margin-bottom:10px;
+}
+#secure-input-container button {
+    padding:10px 25px;
+    border:none;
+    background-color:#fca311;
+    color:white;
+    border-radius:5px;
+    cursor:pointer;
+}
+#secure-input-container button:hover { background-color:#e07b00; }
+
+.help-section { width:90%; margin:50px auto; padding:20px; background-color:#ffe5b4; border-radius:10px; text-align:center; font-size:1.1em; }
