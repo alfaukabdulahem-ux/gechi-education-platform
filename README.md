@@ -1,2 +1,2 @@
 # gechi-education-platform
-My first HTML CSS JS website
+our technology development copany HTML CSS JS website
